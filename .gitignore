@@ -1,0 +1,14 @@
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Go binaries and test files
+/bin/
+*.exe
+*.test
+*.out
+
+# Environment and OS files
+.env
+.DS_Store
