@@ -3,6 +3,7 @@ build:
 
 run:
 	go run cmd/main.go
+	cd internal/ui/web && npm run dev
 
 test:
 	go test -v ./...

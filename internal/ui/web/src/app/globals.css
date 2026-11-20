@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg: #1e1e1e;
+  --panel: #0c0c0c;
+  --line: #363636;
+  --txt: #d4d4d4;
+  --dim: #727272;
+  --up: #38d060;
+  --down: #e5484d;
+  --flat: #f2d94e;
+  --cy: #5ab6c9;
+}
+html, body { height: 100%; margin: 0; background: var(--bg); color: var(--txt); font-family: var(--font-plex), ui-monospace, Menlo, Consolas, monospace; font-size: 12px; }
+.up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--flat); } .dim { color: var(--dim); } .cy { color: var(--cy); }
+.win { background: var(--panel); border: 1px solid var(--line); display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+.wt { background: linear-gradient(#3e3e3e, #242424); padding: 3px 8px; border-bottom: 1px solid #4a4a4a; display: flex; justify-content: space-between; gap: 8px; color: #b8b8b8; }
+table { border-collapse: collapse; width: 100%; }
+th { color: #b4b4b4; font-weight: 500; text-align: right; padding: 3px 8px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--panel); white-space: nowrap; }
+td { padding: 2px 8px; text-align: right; white-space: nowrap; }
+th.l, td.l { text-align: left; }
+tbody tr:hover { background: #242424; }
+.scroll { overflow: auto; min-height: 0; }
+.tab { padding: 4px 16px; border: 1px solid var(--line); border-bottom: none; color: var(--dim); cursor: pointer; background: #2a2a2a; }
+.tab.on { color: #fff; background: #5e5e5e; border-color: #7a7a7a; }
+.btn { padding: 3px 10px; border: 1px solid #4a4a4a; background: #2a2a2a; color: var(--txt); cursor: pointer; }
+.btn:hover { background: #3a3a3a; } .btn.on { background: #5e5e5e; color: #fff; }
+.chip { display: inline-flex; gap: 6px; align-items: center; padding: 2px 8px; border: 1px solid #4a4a4a; background: #1a1a1a; }
+input, select { background: #000; border: 1px solid var(--line); color: var(--txt); padding: 4px 6px; font: inherit; outline: none; width: 100%; }
+input:focus, select:focus, .tab:focus-visible, .btn:focus-visible, button:focus-visible { outline: 1px solid var(--cy); }
+button { font: inherit; }
+.bar { height: 6px; background: #242424; }
+.shrink0 > * { flex-shrink: 0; }
+.xs { overflow-x: auto; overflow-y: hidden; flex-shrink: 0; max-width: 100%; }
+.fin { min-width: 980px; }
+.fin td:first-child, .fin th:first-child { position: sticky; left: 0; background: var(--panel); z-index: 1; min-width: 150px; border-right: 1px solid var(--line); }
+.fin td, .fin th { min-width: 84px; }
