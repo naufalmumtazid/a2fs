@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib/x86_64-linux-gnu
+includedir=/usr/include
+
+Name: webkit2gtk-4.0
+Description: Compatibility alias for WebKitGTK 4.1
+Version: 4.0
+Requires: gtk+-3.0 webkit2gtk-4.1
+Libs: -L${libdir} -lwebkit2gtk-4.1 -ljavascriptcoregtk-4.1
+Cflags: -I${includedir}/webkitgtk-4.1

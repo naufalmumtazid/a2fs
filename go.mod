@@ -5,6 +5,7 @@ go 1.27.3
 require (
 	github.com/glebarez/sqlite v1.11.0
 	github.com/go-rod/rod v0.116.2
+	github.com/webview/webview_go v0.0.0-20240831120633-6173450d4dd6
 	gorm.io/gorm v1.31.2
 )
 
